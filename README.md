@@ -79,7 +79,7 @@ namespace CrystisDemo
         {
             InitializeComponent();
 
-            string filename = "schema.xml";
+            string filename = "schema.xml";  //in this example the schema is used to create a dataset
           
             using (System.IO.FileStream stream = new System.IO.FileStream(filename, System.IO.FileMode.Open))
             {
