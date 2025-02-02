@@ -47,7 +47,8 @@ If you want to use `CrystisDesktop.dll` in your own desktop application, follow 
 
 1. Copy `CrystisDesktop.dll` to your project's `bin\Debug` directory.
 2. Place your `.rpt` files in the **same** `bin\Debug` directory.
-3. Run your application—`CrystisDesktop.dll` will handle everything, including extracting necessary dependencies.
+3. Make aure you include CrystisDesktop.dll in your application references
+4. Run your application—`CrystisDesktop.dll` will handle everything, including extracting necessary dependencies.
 
 ## Deployment
 For end-users running the final application, ensure that `CrystisDesktop.dll` and all `.rpt` files are placed in the **same directory as the application executable**. This ensures proper functionality without additional configurations.
