@@ -71,8 +71,6 @@ namespace CrystisDemo
 {
     public partial class MainForm : Form
     {
-        private Crystal cs = new Crystal();
-
         public MainForm()
         {
             InitializeComponent();
@@ -80,12 +78,17 @@ namespace CrystisDemo
 
         private void btnShowReport_Click(object sender, EventArgs e)
         {
-            cs.tcode = "DEMO1";  // Your account code
-            cs.tucode = "0000";  // Your user code
-            cs.trptfilePath = "CustomerReport1.rpt";  // Report file in bin\Debug
-            cs.tDEST = "0";  // Display the report on screen
+            clsCrystisClass tsi = new clsCrystisClass();
 
-            cs.showReport();
+            tsi.AccountCode = "DEMO1";  // your account code
+            tsi.UserCode = "0000"; // yout user code
+            tsi.dsRPT = dsCustomers;
+            tsi.DEST = 0;
+
+            string rptPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "CustomerReport1.rpt");
+            tsi.ReportFullName = rptPath;
+
+            tsi.ShowForm();
         }
     }
 }
