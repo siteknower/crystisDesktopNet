@@ -65,6 +65,7 @@ Below is a simple example demonstrating how to integrate **CrystisDesktop** into
 ```csharp
 using System;
 using System.Windows.Forms;
+using System.Data;
 using CrystisDesktop;
 
 namespace CrystisDemo
@@ -74,6 +75,13 @@ namespace CrystisDemo
         public MainForm()
         {
             InitializeComponent();
+
+            string filename = "schema.xml";
+          
+            using (System.IO.FileStream stream = new System.IO.FileStream(filename, System.IO.FileMode.Open))
+            {
+                dsCustomers.ReadXmlSchema(stream);
+            }
         }
 
         private void btnShowReport_Click(object sender, EventArgs e)
