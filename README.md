@@ -11,12 +11,15 @@ without requiring additional installations. Everything needed to render reports 
 One of the key benefits of **CrystisDesktop** is that you **do not need to install Crystal Reports or Crystal Reports Runtime**.
 The library unpacks and integrates all necessary dependencies automatically when first used.
 
-## Features
-- Display Crystal Reports seamlessly in .NET desktop applications.
-- No need to install Crystal Reports or its runtime.
-- Automatic unpacking of required dependencies.
-- Uses **WebView2** for rendering reports inside the application.
-- Lightweight and easy to integrate.
+### Key Features
+- Seamless integration of Crystal Reports into .NET desktop applications.
+- **No additional installations required:** Everything is handled by `CrystisDesktop.dll`.
+- The library automatically extracts required files when first used:
+  - `Microsoft.Web.WebView2.Core.dll`
+  - `Microsoft.Web.WebView2.WinForms.dll`
+  - `Newtonsoft.Json.dll`
+  - `WebView2Loader.dll`
+- Supports placing `.rpt` report files directly in the application directory.
 
 ## Getting Started
 
@@ -27,27 +30,34 @@ The library unpacks and integrates all necessary dependencies automatically when
     - First 30 days are free!
 3. **No need to install Crystal Reports or its runtime** – everything is handled by **CrystisDesktop.dll**.
 
-### Required Files
-To use **CrystisDesktop**, you only need to include **CrystisDesktop.dll** in your application's **bin\Debug** directory.
+### Cloning the Repository
+When you clone the `crystisDesktopNet` repository, you get a **fully functional desktop .NET application**. No changes are needed—simply open `CrystisDesktopNet.csproj` in Visual Studio, and everything works out of the box.
 
-Upon first use, **CrystisDesktop.dll** automatically unpacks and adds the following embedded dependencies:
-- `Microsoft.Web.WebView2.Core.dll`
-- `Microsoft.Web.WebView2.WinForms.dll`
-- `Newtonsoft.Json.dll`
-- `WebView2Loader.dll`
-
-These files will be placed in the **bin\Debug** directory alongside your main executable.
-
-### Installation
-1. Clone this repository:
+**Steps:**
+1. Clone the repository:
    ```bash
    git clone https://github.com/siteknower/crystisDesktopNet.git
    cd crystisDesktopNet
    ```
+2. Open `CrystisDesktopNet.csproj` in Visual Studio.
+3. Run the application—everything is preconfigured.
 
-2. Copy **CrystisDesktop.dll** from this repository to your project's **bin\Debug** folder.
+## Integrating CrystisDesktop into a New Project
+If you want to use `CrystisDesktop.dll` in your own desktop application, follow these steps:
 
-3. Place your `.rpt` files (Crystal Reports) in the same directory as your application executable (e.g., **bin\Debug**).
+1. Copy `CrystisDesktop.dll` to your project's `bin\Debug` directory.
+2. Place your `.rpt` files in the **same** `bin\Debug` directory.
+3. Run your application—`CrystisDesktop.dll` will handle everything, including extracting necessary dependencies.
+
+## Deployment
+For end-users running the final application, ensure that `CrystisDesktop.dll` and all `.rpt` files are placed in the **same directory as the application executable**. This ensures proper functionality without additional configurations.
+
+## Running the Application
+1. **During development:**
+   - Ensure `CrystisDesktop.dll` and `.rpt` files are in `bin\Debug`.
+   - Run your application from Visual Studio.
+2. **For deployed applications:**
+   - Ensure `CrystisDesktop.dll` and `.rpt` files are in the same directory as the `.exe` file.
 
 ### Quick Start Example
 Below is a simple example demonstrating how to integrate **CrystisDesktop** into a Windows Forms application.
