@@ -122,7 +122,7 @@ namespace CrystisDemo
 1. **Single DLL Integration**: Simply include `CrystisDesktop.dll` in your project.
 2. **Automatic Dependency Unpacking**: When the application first runs, the necessary dependencies are extracted automatically.
 3. **Report Placement**: Make sure your `.rpt` files are placed alongside your application's executable.
-4. **Easy Report Display**: Set report parameters and call `cs.showReport()` to render the report.
+4. **Easy Report Display**: Set report parameters and call `tsi.ShowForm();` to render the report.
 
 ### Running the Application
 Run your application, and click the button to display the report.
