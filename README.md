@@ -3,7 +3,7 @@
 This repository demonstrates how to integrate Crystal Reports into .NET desktop applications using **CrystisDesktop**,
 a powerful tool designed for Windows Forms and WPF developers.
 
-## About CrystisDesktop
+## About crystis for Desktop NET
 CrystisDesktop is a .NET library that allows you to display Crystal Reports directly within your desktop applications
 without requiring additional installations. Everything needed to render reports is embedded within **CrystisDesktop.dll**.
 
