@@ -66,10 +66,13 @@ Below is a simple example demonstrating how to integrate **CrystisDesktop** into
 using System;
 using System.Windows.Forms;
 using System.Data;
+using System.IO;
 using CrystisDesktop;
 
 namespace CrystisDemo
 {
+    DataSet dsCustomers = new DataSet();
+
     public partial class MainForm : Form
     {
         public MainForm()
@@ -82,7 +85,20 @@ namespace CrystisDemo
             {
                 dsCustomers.ReadXmlSchema(stream);
             }
+
+            GetData();
         }
+
+         private DataSet GetData()
+         {
+             DataTable dt = dsCustomers.Tables["Users"];
+             dt.Rows.Add("ABDEN", "Maria Weiss", "Berlin", "Germany");
+             dt.Rows.Add("AXEIS", "Pedro Alvarez", "México D.F.", "Mexico");
+             dt.Rows.Add("BENOI", "Anna Tóth", "Szeged", "Hungary");
+             dt.Rows.Add("CAZLE", "Jan Eriksson", "Mannheim", "Sweden");
+             dt.Rows.Add("DRFOS", "Giulia Donatelli", "Milano", "Italia");
+             return dsCustomers;
+         }
 
         private void btnShowReport_Click(object sender, EventArgs e)
         {
