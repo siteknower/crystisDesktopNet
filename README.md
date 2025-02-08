@@ -10,7 +10,7 @@ without requiring additional installations. Everything needed to render reports 
 ### **No Additional Installations Required**
 One of the key benefits of **CrystisDesktop** is that you **do not need to install Crystal Reports or Crystal Reports Runtime**.
 
-In addition, he library unpacks and integrates all necessary dependencies automatically when first used.
+In addition, the library unpacks and integrates all necessary dependencies automatically when first used.
 
 ### Key Features
 - Seamless integration of Crystal Reports into .NET desktop applications.
