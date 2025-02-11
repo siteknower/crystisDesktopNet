@@ -60,7 +60,7 @@ Alternatively, if you prefer **manual installation**, you can:
 - This ensures that CrystisDesktop.dll can locate and load them properly.
 
 ## First 30 Days Free
-- To use CrystisDesktop, you need an account code and user code from Siteknower.
+- To use CrystisDesktop, you need an account code and user code from [Siteknower](https://www.siteknower.com/).
 - When you sign up, you get 30 days free with your own account code.
 - If you don’t have an account yet, you can test with:
     - **Account Code**: DEMO1
