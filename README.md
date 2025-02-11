@@ -28,7 +28,6 @@ In addition, the library unpacks and integrates all necessary dependencies autom
 1. .NET Framework or .NET Core compatible with Windows Forms or WPF applications.
 2.  Access to an account at siteknower.com (https://www.siteknower.com) to obtain your account code and user code.
     - Demo account code (`DEMO1`) and user code (`0000`) are used in these examples to display demo data.
-    - First 30 days are free!
 3. **No need to install Crystal Reports or its runtime** – everything is handled by **CrystisDesktop.dll**.
 
 ### Cloning the Repository
