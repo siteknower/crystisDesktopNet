@@ -56,8 +56,9 @@ Alternatively, if you prefer **manual installation**, you can:
 2. Copy it to your project's bin\Debug directory.
 3. Add it as a reference in Visual Studio.
 
-
-
+## Placing Report Files (`.rpt`)
+Place your Crystal Reports (.rpt files) in the same directory as your executable (bin\Debug during development).
+This ensures that CrystisDesktop.dll can locate and load them properly.
    
 ## Deployment
 For end-users running the final application, ensure that `CrystisDesktop.dll` and all `.rpt` files are placed in the **same directory as the application executable**. This ensures proper functionality without additional configurations.
