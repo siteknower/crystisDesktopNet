@@ -48,7 +48,17 @@ To use **CrystisDesktop** in your own desktop application, install it via **NuGe
    ```bash
   Install-Package Crystis.DesktopNet
    ```
+This will automatically include CrystisDesktop.dll in your project.
 
+Alternatively, if you prefer **manual installation**, you can:
+
+1. Download CrystisDesktop.dll from this repository.
+2. Copy it to your project's bin\Debug directory.
+3. Add it as a reference in Visual Studio.
+
+
+
+   
 ## Deployment
 For end-users running the final application, ensure that `CrystisDesktop.dll` and all `.rpt` files are placed in the **same directory as the application executable**. This ensures proper functionality without additional configurations.
 
