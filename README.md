@@ -52,8 +52,8 @@ This will automatically include CrystisDesktop.dll in your project.
 
 Alternatively, if you prefer **manual installation**, you can:
 
-1. Download CrystisDesktop.dll from this repository.
-2. Copy it to your project's bin\Debug directory.
+1. Download `CrystisDesktop.dll` from this repository.
+2. Copy it to your project's `bin\Debug` directory.
 3. Add it as a reference in Visual Studio.
 
 ## Placing Report Files (`.rpt`)
