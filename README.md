@@ -57,9 +57,16 @@ Alternatively, if you prefer **manual installation**, you can:
 3. Add it as a reference in Visual Studio.
 
 ## Placing Report Files (`.rpt`)
-Place your Crystal Reports (.rpt files) in the same directory as your executable (bin\Debug during development).
-This ensures that CrystisDesktop.dll can locate and load them properly.
-   
+- Place your **Crystal Reports** (`.rpt` files) in the **same directory as your executable** (bin\Debug during development).
+- This ensures that CrystisDesktop.dll can locate and load them properly.
+
+## First 30 Days Free
+- To use CrystisDesktop, you need an account code and user code from Siteknower.
+- When you sign up, you get 30 days free with your own account code.
+- If you don’t have an account yet, you can test with:
+-- **Account Code**: DEMO1
+-- **User Code: 0000** (for demo data only)
+
 ## Deployment
 For end-users running the final application, ensure that `CrystisDesktop.dll` and all `.rpt` files are placed in the **same directory as the application executable**. This ensures proper functionality without additional configurations.
 
