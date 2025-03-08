@@ -19,6 +19,7 @@ namespace CrystisDesktopNet
             InitializeComponent();
 
             string filename = "schema.xml";
+            textBox1.Visible = false;
 
             using (System.IO.FileStream stream = new System.IO.FileStream(filename, System.IO.FileMode.Open))
             {
@@ -79,5 +80,24 @@ namespace CrystisDesktopNet
             tsi.ShowForm();
         }
 
+        private void btnGetReportUrl_Click(object sender, EventArgs e)
+        {
+            clsCrystisClass tsi = new clsCrystisClass();
+            string preslAccountCode = "DEMO1";  // your account code
+            string preslUserCode = "0000"; // yout user code
+
+            tsi.AccountCode = preslAccountCode;
+            tsi.UserCode = preslUserCode;
+            tsi.dsRPT = dsCustomers;
+            tsi.DEST = 0;
+
+            string rptPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "CustomerReport1.rpt");
+            tsi.ReportFullName = rptPath;
+
+            string tgetReportUrl = tsi.getReportUrl();
+
+            textBox1.Visible = true;
+            textBox1.Text = tgetReportUrl;
+        }
     }
 }
