@@ -140,6 +140,7 @@ namespace CrystisDemo
 2. **Automatic Dependency Unpacking**: When the application first runs, the necessary dependencies are extracted automatically.
 3. **Report Placement**: Make sure your `.rpt` files are placed alongside your application's executable.
 4. **Easy Report Display**: Set report parameters and call `tsi.ShowForm();` to render the report.
+5. Alternatively, you can get the URL of the report with **string tgetReportUrl = tsi.getReportUrl();** and display it in your application in some other way.
 
 ### Running the Application
 Run your application, and click the button to display the report.
