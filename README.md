@@ -30,33 +30,6 @@ In addition, the library unpacks and integrates all necessary dependencies autom
     - Demo account code (`DEMO1`) and user code (`0000`) are used in these examples to display demo data.
 3. **No need to install Crystal Reports or its runtime** – everything is handled by **CrystisDesktop.dll**.
 
-### Configuring MIME Types for .rpt Files
-
-To ensure `.rpt` files are served correctly by your web server when using `crystis`, you may need to configure the MIME type for `.rpt` files. In some cases, the web server already recognizes `.rpt` files, and no additional configuration is required. However, if reports fail to load, adding the MIME type is recommended.
-
-- **For IIS**: Add the `.rpt` MIME type to the `web.config` file:
-    ```xml
-    <configuration>
-      <system.webServer>
-        <staticContent>
-          <mimeMap fileExtension=".rpt" mimeType="application/octet-stream" />
-        </staticContent>
-      </system.webServer>
-    </configuration>
-    ```
-- **For Apache**: Add the following to your server configuration or `.htaccess` file:
-    ```apache
-    AddType application/octet-stream .rpt
-    ```
-- **For NGINX**: Add the following to your `mime.types` file or NGINX configuration:
-    ```nginx
-    types {
-        application/octet-stream rpt;
-    }
-    ```
-
-**Note:** While some servers may handle `.rpt` files without additional configuration, explicitly adding the MIME type ensures compatibility and avoids potential issues.
-
 ### Cloning the Repository
 When you clone the `crystisDesktopNet` repository, you get a **fully functional desktop .NET application**. No changes are needed—simply open `CrystisDesktopNet.csproj` in Visual Studio, and everything works out of the box.
 
