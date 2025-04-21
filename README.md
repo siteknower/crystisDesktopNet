@@ -1,4 +1,4 @@
-# crystisDesktopNet - Crystal Reports for DESKTOP.NET
+# crystisDesktopNet - Crystal Reports for .NET desktop
 
 This repository demonstrates how to integrate Crystal Reports into .NET desktop applications using **CrystisDesktop**,
 a powerful tool designed for Windows Forms and WPF developers.
