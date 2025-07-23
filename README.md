@@ -137,6 +137,10 @@ namespace CrystisDemo
 }
 ```
 
+Video Tutorial
+-----------------------
+[Easy Crystal Reports in NET.Derktop](https://www.youtube.com/watch?v=Jkg1_WljZZk&t=4s)
+
 ### Key Points
 1. **Single DLL Integration**: Simply include `CrystisDesktop.dll` in your project.
 2. **Automatic Dependency Unpacking**: When the application first runs, the necessary dependencies are extracted automatically.
